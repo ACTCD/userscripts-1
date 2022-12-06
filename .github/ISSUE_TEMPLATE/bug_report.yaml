@@ -57,12 +57,14 @@ body:
     label: Environment
     description: |
       examples:
-        - **OS version**: macOS 13.0.1, iOS 16.1.1, iPadOS 16.1.1
-        - **Safari version**: 16.1 (18614.2.9.1.12)
+        - **OS/Safari version**: macOS 13.0.1 (22A400), Safari 16.1 (18614.2.9.1.12)
         - **Userscripts version**: 4.3.3 (65)
+        - **OS/Safari version**: iOS 16.1.1
+        - **Userscripts version**: 1.3.3 (38)
+        - **OS/Safari version**: iPadOS 16.1.1
+        - **Userscripts version**: 1.3.3 (38)
     value: |
-        - OS version:
-        - Safari version:
+        - OS/Safari version:
         - Userscripts version:
     render: markdown
   validations:
