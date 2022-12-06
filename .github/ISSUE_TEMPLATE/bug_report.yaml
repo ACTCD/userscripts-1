@@ -1,6 +1,6 @@
 name: Bug report
 description: Report a bug in the app or project itself
-labels: [Bug, Needs Triage]
+labels: Bug, Needs Triage
 body:
 - type: markdown
   attributes:
