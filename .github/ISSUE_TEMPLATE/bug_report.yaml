@@ -1,7 +1,6 @@
-name: 🐞 Bug
-description: File a bug/issue
-title: "[BUG] <title>"
-labels: [Bug, Needs Triage]
+name: Bug report
+description: Report a bug in the app or project itself
+labels: Bug, Needs Triage
 body:
 - type: checkboxes
   attributes:
@@ -9,6 +8,13 @@ body:
     description: Please search to see if an issue already exists for the bug you encountered.
     options:
     - label: I have searched the existing issues
+      required: true
+- type: checkboxes
+  attributes:
+    label: Are you sure this is NOT an issue about external scripts not working?
+    description: Please choose the correct type for issues about third-party user scripts.
+    options:
+    - label: I am sure it is NOT a user script issue
       required: true
 - type: textarea
   attributes:
@@ -48,6 +54,12 @@ body:
     render: markdown
   validations:
     required: false
+- type: textarea
+  id: logs
+  attributes:
+    label: Relevant log output
+    description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+    render: shell
 - type: textarea
   attributes:
     label: Anything else?
